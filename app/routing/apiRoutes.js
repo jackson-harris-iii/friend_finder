@@ -7,6 +7,7 @@ exports.showAll = (req, res) => {
 exports.recieve =  (req, res) => {
    
     let data = req.body;
+    console.log(data)
     let all = friend.users;
     let info = Object.keys(data).map(function (k) { return parseInt(data[k]) });
     let score = info.slice(2);
