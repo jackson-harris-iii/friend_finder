@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- Navbar  -->
+        <nav class="nav purple darken-2">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Friend Finder</a>
+                <a href="#" data-target="nav-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="/api/friends">API</a>asdf
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- main page card -->
+        <div class="row center-align">
+            <div class="container">
+                <div class="card grey lighten-2 hoverable">
+                    <div class="card-content">
+                        <h4 class="pink-text"> Finding a friend has never been easier! 
+                        </h4>
+                    </div>
+                    <div class="card-action center-align">
+                        <!-- get started button -->
+                        <a href="/survey" class="waves-effect waves-light btn-large pink lighten-1">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+            $(document).ready(function () {
+                $('.sidenav-trigger').sidenav();
+
+
+
+            });
+    </script>
+</body>
+</html>
