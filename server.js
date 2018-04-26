@@ -13,6 +13,7 @@ app.use(bp.json());
 
 app.get('/', htmlRoutes.home);
 app.get('/survey', htmlRoutes.survey);
+app.get('/api/friends', apiRoutes.showAll)
 app.post('/api/friends', apiRoutes.recieve)
 
 app.listen(PORT, () => {

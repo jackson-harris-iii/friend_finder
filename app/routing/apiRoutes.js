@@ -1,7 +1,7 @@
 const friend = require('../data/friends')
 
 exports.showAll = (req, res) => {
-    return res.json(friends)
+    res.json(friend.users)
 }
 
 exports.recieve =  (req, res) => {

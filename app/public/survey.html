@@ -30,235 +30,229 @@
 
         <!-- Navbar  -->
         <nav class="navbar navbar-expand-lg purple darken-2">
-            <a class="navbar-brand white-text mr-auto ml-auto">SURVEY</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <ul class="navbar-nav mr-0">
-                <li class="nav-item">
-                    <a class="nav-link white-text" href="#">API</a>
-                </li>
-            </ul>
+            <span class="navbar-brand white-text mr-auto ml-auto">SURVEY</span>
         </nav>
 
         <!-- main page card -->
         <div class="row center-align mt-3">
             <div class="container">
                 <div class="card">
-                    <div class="card-body">
-                        <form id="surveyForm">
-                            <!-- Default input name -->
-                            <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Your name</label>
-                            <input name='name' type="text" id="userName" class="form-control">
-                        
-                            <br>
-                        
-                            <!-- Default input email -->
-                            <label for="defaultFormCardEmailEx" class="grey-text font-weight-light">Your Image URL</label>
-                            <input name='photo'type="URL" id="userPhoto" class="form-control">
+                    <div class="card-body grey lighten-2">
+                        <div class="container">
+                            <form id="surveyForm">
+                                <!-- Default input name -->
+                                <label for="defaultFormCardNameEx" class="pink-text">Your name</label>
+                                <input name='name' type="text" id="userName" class="form-control">
+                            
+                                <br>
+                            
+                                <!-- Default input email -->
+                                <label for="defaultFormCardEmailEx" class="pink-text">Your Image URL</label>
+                                <input name='photo'type="URL" id="userPhoto" class="form-control">
 
-                            <br>
+                                <br>
 
-                            <div class="row">
-                                <div class="col">
-                                    <p>1. I like to met new people and take action.</p>
-                                </div>
-                                <div class="col">
-                                    <div class="btn-group">
-                                        <select name="q1" class="browser-default q1">
-                                            <option value="1">Strongly Disagree</option>
-                                            <option value="2">Disagree</option>
-                                            <option value="3">Neutral</option>
-                                            <option value="3">Agree</option>
-                                            <option value="3">Strongly Agree</option>
-                                        </select>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>1. I like to meet new people and take action.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <select name="q1" class="browser-default q1">
+                                                <option value="1">Strongly Disagree</option>
+                                                <option value="2">Disagree</option>
+                                                <option value="3">Neutral</option>
+                                                <option value="3">Agree</option>
+                                                <option value="3">Strongly Agree</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="dropdown-divider"></div>
-                            <br>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <p>2. I trust the tangible and love specific details.</p>
-                                </div>
-                                <div class="col">
-                                    <div class="btn-group">
-                                        <select name="q2" class="browser-default q2">
-                                            <option value="1">Strongly Disagree</option>
-                                            <option value="2">Disagree</option>
-                                            <option value="3">Neutral</option>
-                                            <option value="3">Agree</option>
-                                            <option value="3">Strongly Agree</option>
-                                        </select>
+                                
+                                <div class="dropdown-divider"></div>
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <p>2. I trust the tangible and love specific details.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <select name="q2" class="browser-default q2">
+                                                <option value="1">Strongly Disagree</option>
+                                                <option value="2">Disagree</option>
+                                                <option value="3">Neutral</option>
+                                                <option value="3">Agree</option>
+                                                <option value="3">Strongly Agree</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="dropdown-divider"></div>
-                            <br>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <p>3. I make decisions through detatched, rational and logical thought.</p>
-                                </div>
-                                <div class="col">
-                                    <div class="btn-group">
-                                        <select name="q3" class="browser-default">
-                                            <option value="1">Strongly Disagree</option>
-                                            <option value="2">Disagree</option>
-                                            <option value="3">Neutral</option>
-                                            <option value="3">Agree</option>
-                                            <option value="3">Strongly Agree</option>
-                                        </select>
+                                <div class="dropdown-divider"></div>
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <p>3. I make decisions through detatched, rational and logical thought.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <select name="q3" class="browser-default">
+                                                <option value="1">Strongly Disagree</option>
+                                                <option value="2">Disagree</option>
+                                                <option value="3">Neutral</option>
+                                                <option value="3">Agree</option>
+                                                <option value="3">Strongly Agree</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="dropdown-divider"></div>
-                            <br>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <p>4. I prefer to have definite set in stone plans.</p>
-                                </div>
-                                <div class="col">
-                                    <div class="btn-group">
-                                        <select name="q4" class="browser-default">
-                                            <option value="1">Strongly Disagree</option>
-                                            <option value="2">Disagree</option>
-                                            <option value="3">Neutral</option>
-                                            <option value="3">Agree</option>
-                                            <option value="3">Strongly Agree</option>
-                                        </select>
+                                <div class="dropdown-divider"></div>
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <p>4. I prefer to have definite set in stone plans.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <select name="q4" class="browser-default">
+                                                <option value="1">Strongly Disagree</option>
+                                                <option value="2">Disagree</option>
+                                                <option value="3">Neutral</option>
+                                                <option value="3">Agree</option>
+                                                <option value="3">Strongly Agree</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="dropdown-divider"></div>
-                            <br>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <p>5. I prefer to keep my options open.</p>
-                                </div>
-                                <div class="col">
-                                    <div class="btn-group">
-                                        <select name="q5" class="browser-default">
-                                            <option value="1">Strongly Disagree</option>
-                                            <option value="2">Disagree</option>
-                                            <option value="3">Neutral</option>
-                                            <option value="3">Agree</option>
-                                            <option value="3">Strongly Agree</option>
-                                        </select>
+                                <div class="dropdown-divider"></div>
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <p>5. I prefer to keep my options open.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <select name="q5" class="browser-default">
+                                                <option value="1">Strongly Disagree</option>
+                                                <option value="2">Disagree</option>
+                                                <option value="3">Neutral</option>
+                                                <option value="3">Agree</option>
+                                                <option value="3">Strongly Agree</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="dropdown-divider"></div>
-                            <br>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <p>6. I make decisions by getting a feel for the situation.</p>
-                                </div>
-                                <div class="col">
-                                    <div class="btn-group">
-                                        <select name="q6" class="browser-default">
-                                            <option value="1">Strongly Disagree</option>
-                                            <option value="2">Disagree</option>
-                                            <option value="3">Neutral</option>
-                                            <option value="3">Agree</option>
-                                            <option value="3">Strongly Agree</option>
-                                        </select>
+                                <div class="dropdown-divider"></div>
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <p>6. I make decisions by getting a feel for the situation.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <select name="q6" class="browser-default">
+                                                <option value="1">Strongly Disagree</option>
+                                                <option value="2">Disagree</option>
+                                                <option value="3">Neutral</option>
+                                                <option value="3">Agree</option>
+                                                <option value="3">Strongly Agree</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="dropdown-divider"></div>
-                            <br>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <p>7. I trust the abtract and like to find patterns among differnt things.</p>
-                                </div>
-                                <div class="col">
-                                    <div class="btn-group">
-                                        <select name="q7" class="browser-default">
-                                            <option value="1">Strongly Disagree</option>
-                                            <option value="2">Disagree</option>
-                                            <option value="3">Neutral</option>
-                                            <option value="3">Agree</option>
-                                            <option value="3">Strongly Agree</option>
-                                        </select>
+                                <div class="dropdown-divider"></div>
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <p>7. I trust the abtract and like to find patterns among differnt things.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <select name="q7" class="browser-default">
+                                                <option value="1">Strongly Disagree</option>
+                                                <option value="2">Disagree</option>
+                                                <option value="3">Neutral</option>
+                                                <option value="3">Agree</option>
+                                                <option value="3">Strongly Agree</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="dropdown-divider"></div>
-                            <br>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <p>8. I like to reflect on my ideas and thoughts for some time before taking action.</p>
-                                </div>
-                                <div class="col">
-                                    <div class="btn-group">
-                                        <select name="q8" class="browser-default">
-                                            <option value="1">Strongly Disagree</option>
-                                            <option value="2">Disagree</option>
-                                            <option value="3">Neutral</option>
-                                            <option value="3">Agree</option>
-                                            <option value="3">Strongly Agree</option>
-                                        </select>
+                                <div class="dropdown-divider"></div>
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <p>8. I like to reflect on my ideas and thoughts for some time before taking action.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <select name="q8" class="browser-default">
+                                                <option value="1">Strongly Disagree</option>
+                                                <option value="2">Disagree</option>
+                                                <option value="3">Neutral</option>
+                                                <option value="3">Agree</option>
+                                                <option value="3">Strongly Agree</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="dropdown-divider"></div>
-                            <br>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <p>9. I like getting caught in the rain.</p>
-                                </div>
-                                <div class="col">
-                                    <div class="btn-group">
-                                        <select name="q9" class="browser-default">
-                                            <option value="1">Strongly Disagree</option>
-                                            <option value="2">Disagree</option>
-                                            <option value="3">Neutral</option>
-                                            <option value="3">Agree</option>
-                                            <option value="3">Strongly Agree</option>
-                                        </select>
+                                <div class="dropdown-divider"></div>
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <p>9. I like getting caught in the rain.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <select name="q9" class="browser-default">
+                                                <option value="1">Strongly Disagree</option>
+                                                <option value="2">Disagree</option>
+                                                <option value="3">Neutral</option>
+                                                <option value="3">Agree</option>
+                                                <option value="3">Strongly Agree</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="dropdown-divider"></div>
-                            <br>
-                            
-                            <div class="row">
-                                <div class="col">
-                                    <p>10. I enjoy long walks on the beach.</p>
-                                </div>
-                                <div class="col">
-                                    <div class="btn-group">
-                                        <select name="q10" class="browser-default">
-                                            <option value="1">Strongly Disagree</option>
-                                            <option value="2">Disagree</option>
-                                            <option value="3">Neutral</option>
-                                            <option value="3">Agree</option>
-                                            <option value="3">Strongly Agree</option>
-                                        </select>
+                                <div class="dropdown-divider"></div>
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <p>10. I enjoy long walks on the beach.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <select name="q10" class="browser-default">
+                                                <option value="1">Strongly Disagree</option>
+                                                <option value="2">Disagree</option>
+                                                <option value="3">Neutral</option>
+                                                <option value="3">Agree</option>
+                                                <option value="3">Strongly Agree</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                                <button type="submit" class="btn btn-pink" id="formSub">Submit</button>
-                        </form>
+                                <div class="container mx-auto text-center">
+                                    <button type="submit" class="btn btn-pink" id="formSub">Submit</button>
+                                </div>
+                            </form>
+                        </div>    
                     </div>                 
                 </div>
             </div>
@@ -305,7 +299,8 @@
             </div>
         </div>
     </div>
-
+    <div class="mx-auto">
+       <a href="/api/friends"><span class="badge purple darken-2 mx-auto">API</span></a>
     </div>
     <script>
         $(document).ready(function () {
