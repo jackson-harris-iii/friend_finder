@@ -2,7 +2,7 @@ var users =[
     {
     "id": 1,        
     "name": "Goku",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "http://www.stickpng.com/assets/images/584e834a6a5ae41a83ddee37.png",
             "score": [
                 1,
                 1,

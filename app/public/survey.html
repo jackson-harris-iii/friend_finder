@@ -264,21 +264,43 @@
             </div>
         </div>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="matchModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="modal-header purple darken-2">
+                    <h5 class="modal-title white-text" id="exampleModalLabel">Your Match Is...</h5>
+                    <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <!-- Card -->
+                    <div class="card testimonial-card">
+                    
+                        <!-- Bacground color -->
+                        <div class="card-up indigo lighten-1">
+                        </div>
+                    
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white">
+                            <img class="rounded-circle img-fluid" id="matchImage">
+                        </div>
+                    
+                        <div class="card-body">
+                            <!-- Name -->
+                            <h4 class="card-title" id="matchName"></h4>
+                            <hr>
+                            
+                            <p>Friend Finder</p>
+                                
+                        </div>
+                    
+                    </div>
+                    <!-- Card -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                   <a href="/"> <button type="button" class="btn btn-primary">Home</button> </a>
                 </div>
             </div>
         </div>
@@ -290,7 +312,7 @@
             
             console.log('ready')
             // $('.mdb-select').material_select();
-            $('#surveyForm').click(function(event) {
+            $('#formSub').click(function(event) {
                 
                 event.preventDefault();
                 console.log('you did it')
@@ -299,7 +321,16 @@
                 var data = $("#surveyForm").serializeArray()
 
                 $.post( "/api/friends", data, function (res) {
-                    console.log(res)
+                    //set match name to modal card title
+                    $('#matchName').text(res.name)
+
+                    //set match photo to modal
+                    $('#matchImage').attr('src', res.photo)
+                    // trigger modal
+                    $('#matchModal').modal()
+                    
+                    
+                    console.log(res.photo)
                 });
             });
         });    
