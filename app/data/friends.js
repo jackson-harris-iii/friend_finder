@@ -4,54 +4,87 @@ var users =[
     "name": "Goku",
         "photo": "http://www.stickpng.com/assets/images/584e834a6a5ae41a83ddee37.png",
             "score": [
-                1,
-                1,
-                1,
-                4,
-                1,
+                5,
+                2,
                 1,
                 2,
+                3,
+                5,
+                3,
                 4,
-                2,
-                1
+                5,
+                5
             ]
-},
+    },
     {
         "id": 2,
-        "name": "Vegeta",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Ajotta",
+        "photo": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/21192277_650040961868459_5999546714189251730_n.jpg?_nc_cat=0&oh=e6a692b97e076f8e3bb54214af6c74ce&oe=5B94719F",
         "score": [
-            5,
-            1,
             4,
+            3,
             4,
-            5,
-            1,
             2,
+            5,
+            4,
+            4,
+            3,
+            2,
+            5
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Sylvanas",
+        "photo": "https://ih0.redbubble.net/image.173786703.7034/flat,750x1000,075,t.u2.jpg",
+        "score": [
+            4,
+            3,
+            4,
+            3,
+            4,
+            5,
+            5,
             5,
             4,
             1
         ]
+    },
+    {
+        "id": 4,
+        "name": "Motoko Kusanagi",
+        "photo": "http://moe.animecharactersdatabase.com/uploads/chars/9180-181486741.jpg",
+        "score": [
+            4,
+            5,
+            4,
+            4,
+            5,
+            5,
+            2,
+            3,
+            4,
+            3
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Brock",
+        "photo": "https://vignette.wikia.nocookie.net/videogames-fanon/images/b/b4/Brock_DP_anime_3.png/revision/latest?cb=20150620011428",
+        "score": [
+            5,
+            1,
+            2,
+            3,
+            3,
+            5,
+            1,
+            2,
+            4,
+            5
+        ]
     }
 ]
-
-var test = {
-    "id": 2,
-        "name": "Vegeta",
-            "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-                "score": [
-                    5,
-                    1,
-                    2,
-                    4,
-                    2,
-                    1,
-                    3,
-                    5,
-                    4,
-                    2
-                ]
-}
 
 function findFriend(current, all)  {
     let matchScore = 50
