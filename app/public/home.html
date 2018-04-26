@@ -23,17 +23,23 @@
     <div class="container">
 
         <!-- Navbar  -->
-        <nav class="nav purple darken-2">
+        <nav class="purple darken-2">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo center">Friend Finder</a>
-                <a href="#" data-target="nav-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
                         <a href="/api/friends">API</a>
                     </li>
                 </ul>
-            </div>
+            </div>    
         </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="/api/friends">API</a>
+            </li>
+        </ul>
 
         <!-- main page card -->
         <div class="row center-align">
@@ -55,8 +61,8 @@
 
     <script>
             $(document).ready(function () {
-                $('.sidenav-trigger').sidenav();
-
+                
+                     $('.sidenav').sidenav();
 
 
             });
