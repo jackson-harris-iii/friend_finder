@@ -11,3 +11,4 @@ This is a friend finder node.js application. Users take a survey and get matched
 - jQuery
 
 ![Home Page](images/home.png)
+![Survey](images/survey.png)
